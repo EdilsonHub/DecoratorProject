@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Decorador</title>
+</head>
+<body>
+
+  <section class="container">
+    <div class="jumbotron">
+      <h1 class="text-center text-uppercase" >Decorador</h1>
+      <p class="text-center" >Uma ferramenta "bem idiota" para que você possa decorar coisas.</p>
+      <p id="tamanhoLista"class="text-center" ></p>
+
+    </div>
+    <div id="tabela">
+
+      <!-- aqui é renderizada a tabela -->
+
+    </div>
+ 
+  <footer>
+
+</footer>
+</section>
+<script type="text/javascript" src="js/app/controllers/Controller.js" ></script>
+
+<script type="text/javascript" src="js/app/helpers/Bind.js" ></script>
+
+<script type="text/javascript" src="js/app/services/ProxyFactory.js" ></script>
+
+<script type="text/javascript" src="js/app/models/Avaliacao.js" ></script>
+<script type="text/javascript" src="js/app/models/ControleQuestao.js" ></script>
+<script type="text/javascript" src="js/app/models/DadosEstaticos.js" ></script>
+<script type="text/javascript" src="js/app/models/Questao.js" ></script>
+
+<script type="text/javascript" src="js/app/views/View.js" ></script>
+<script type="text/javascript" src="js/app/views/AvaliacaoView.js" ></script>
+<script type="text/javascript" src="js/app/views/MensagemView.js" ></script>
+
+
+<script type="text/javascript">
+  var controle = new Controller();
+</script>
+</body>
+</html>
