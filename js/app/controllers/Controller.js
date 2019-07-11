@@ -4,9 +4,9 @@ class Controller {
     let $ = document.querySelector.bind(document);
 
     this._avaliacao = new Bind(
-      new Avaliacao(), 
-      new AvaliacaoView($('#tabela')), 
-      'avancarProximaQuestao', 
+      new Avaliacao(),
+      new AvaliacaoView($('#tabela')),
+      'avancarProximaQuestao',
       'obterResposta',
       'marcarErroQuestaoAnterior',
       'adicionarDadosEstaticos',
@@ -14,9 +14,13 @@ class Controller {
       'esvaziar'
       );
 
+      this._botoes = new Bind( // este bloco faz uma chamada a "onclick="controle.carregarDados()"
+        DadosEstaticos,
+        new BotoesView($('#botoes'))
+      );
+
       this._bloquearBotaoDeErroAnterior = false;
 
-      this.puxarDadosLista_1();
   }
 
 
@@ -53,8 +57,9 @@ class Controller {
     }
   }
 
-  puxarDadosLista_1(){
-    this._avaliacao.adicionarDadosEstaticos(DadosEstaticos.lista_1());
+  carregarDados(dados){
+    this._avaliacao.esvaziar();
+    this._avaliacao.adicionarDadosEstaticos(dados);
   }
 
 }
