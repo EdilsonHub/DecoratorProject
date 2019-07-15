@@ -10,13 +10,13 @@
 <body>
 
   <section class="container">
-    <div class="jumbotron">
-      <h1 class="text-center text-uppercase" >Decorador</h1>
-      <p class="text-center" >Uma ferramenta "bem idiota" para que você possa decorar coisas.</p>
-      <p id="tamanhoLista"class="text-center" ></p>
-
+    <div class="container">
+      <h1 class="text-center text-uppercase" style="margin:30px auto 15px auto">Decorador</h1>
+      <!-- <p class="text-center" >Uma ferramenta "bem idiota" para que você possa decorar coisas.</p> -->
+      <button class="btn btn-outline-primary btn-block" style="margin:15px auto 15px auto" onclick="controle.alternarView()">Alternar  modelo de Avaliacao</button>
     </div>
-    <div id="botoes">
+      <div id="botoes">
+    </div>
 
   <!-- aqui é renderizado os botoes -->
 
@@ -28,6 +28,7 @@
     </div>
 
   <footer>
+
 
 </footer>
 </section>
@@ -43,7 +44,9 @@
 <script type="text/javascript" src="js/app/models/Questao.js" ></script>
 
 <script type="text/javascript" src="js/app/views/View.js" ></script>
-<script type="text/javascript" src="js/app/views/AvaliacaoView.js" ></script>
+<script type="text/javascript" src="js/app/views/avaliacaoView/AvaliacaoVerView.js" ></script>
+<script type="text/javascript" src="js/app/views/avaliacaoView/AvaliacaoDigitarView.js" ></script>
+
 <script type="text/javascript" src="js/app/views/MensagemView.js" ></script>
 <script type="text/javascript" src="js/app/views/BotoesView.js" ></script>
 
@@ -54,3 +57,4 @@
 </script>
 </body>
 </html>
+
