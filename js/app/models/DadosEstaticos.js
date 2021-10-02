@@ -4,51 +4,9 @@ class DadosEstaticos {
     return [
       "wordlist_1",
       "teste_1",
-      "teste_2",
-      "teste_3",
-      "Existe",
-      "somente",
-      "uma",
-      "idade",
-      "para",
-      "gente",
-      "ser",
-      "feliz",
-      "epoca",
-      "vida",
-      "pessoa",
-      "sonhar",
-      "fazer",
-      "planos",
-      "energia",
-      "bastante",
-      "despeito",
-      "dificuldades",
-      "obstáculos"
+      "teste_2"
     ]
   }
-
-
-
-  static Existe() {return [];}
-  static somente() {return [];}
-  static uma() {return [];}
-  static idade() {return [];}
-  static para() {return [];}
-  static feliz() {return [];}
-  static gente() {return [];}
-  static ser() {return [];}
-  static epoca() {return [];}
-  static vida() {return [];}
-  static pessoa() {return [];}
-  static sonhar() {return [];}
-  static fazer() {return [];}
-  static planos() {return [];}
-  static energia() {return [];}
-  static bastante() {return [];}
-  static despeito() {return [];}
-  static dificuldades() {return [];}
-  static obstáculos() {return [];}
 
   static obj(p,r,d="") {
       return {pergunta: p, resposta: r, dica: d}
@@ -58,7 +16,7 @@ class DadosEstaticos {
     return [
        this.obj("Qual seu nome?", "Edilson"),
        this.obj("Sua idade?", "Eu tenho muitos anos"),
-       this.obj("Desejo", "Ficar muito rico")
+       this.obj("Desejo", "Ficar muito rico e trepar bastante")
      ]
   }
 
@@ -71,16 +29,6 @@ class DadosEstaticos {
        this.obj("primareva", "prima no vera")
      ]
 
-  }
-
-  static teste_3() {
-    return [
-       this.obj("1", "1"),
-       this.obj("2", "22"),
-       this.obj("3", "333"),
-       this.obj("4", "4444"),
-       this.obj("6", "666666")
-     ]
   }
 
   static wordlist_1() {

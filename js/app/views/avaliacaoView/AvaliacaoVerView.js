@@ -26,7 +26,7 @@ class AvaliacaoVerView extends View {
         <td colspan="2">
         
           <div class="text-right" style="width:100%">
-                <button class="btn btn-primary"  onclick="controle.avancarQuestao()">Ok</button>
+                <button class="btn btn-primary"  onclick="controle.avancarQuestao()">Sei a Resposta</button>
                 <button class="btn btn-danger"  onclick="controle.obterResposta()">Conferir Resposta</button>
               </div>
    
